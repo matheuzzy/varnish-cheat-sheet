@@ -1,5 +1,5 @@
 VCL built-in subroutines and their legal returns at the frontend (client) side
---------------------------------------------------------------------------------------
+
 | subroutine  | scope  | deliver | fetch | restart | hash | pass | pipe | synth | purge | lookup |
 --------------------------------------------------------------------------------------
 | vcl_deliver | client |    x    |       |    x    |      |      |      |   x   |       |        |
@@ -14,7 +14,8 @@ VCL built-in subroutines and their legal returns at the frontend (client) side
 
 
 VCL built-in subroutines and their legal returns at the backend side
------------------------------------------------------------------------------
+
+
 | subroutine           | scope       | fetch | deliver | abandon | retry | ok | fail |
 -----------------------------------------------------------------------------
 | vcl_backend_fetch    | backend     |   x   |         |    x    |       |    |      |
@@ -25,7 +26,8 @@ VCL built-in subroutines and their legal returns at the backend side
 
 
 Variables readable (R) or writable (W) in VCL subroutines
-----------------------------------------------------------
+
+
 | subroutine           | req. | bereq. | beresp. | obj. | resp. |
 ----------------------------------------------------------
 | vcl_backend_fetch    |      |   R/W  |         |      |       |
