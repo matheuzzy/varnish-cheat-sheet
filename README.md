@@ -3,7 +3,7 @@
 ## VCL built-in subroutines and their legal returns at the frontend (client) side
 
 | subroutine  | scope  | deliver | fetch | restart | hash | pass | pipe | synth | purge | lookup |
-|-------------|--------|---------|-------|---------|------|------|------|-------|-------|--------|
+|-------------|--------|:-------:|:-----:|:-------:|:----:|:----:|:----:|:-----:|:-----:|:------:|
 | vcl_deliver | client |    x    |       |    x    |      |      |      |   x   |       |        |
 | vcl_hash    | client |         |       |         |      |      |      |       |       |    x   |
 | vcl_hit     | client |    x    |   x   |    x    |      |   x  |      |   x   |       |        |
@@ -19,7 +19,7 @@
 
 
 | subroutine           | scope       | fetch | deliver | abandon | retry | ok | fail |
-|----------------------|-------------|-------|---------|---------|-------|----|------|
+|----------------------|-------------|:-----:|:-------:|:-------:|:-----:|:--:|:----:|
 | vcl_backend_fetch    | backend     |   x   |         |    x    |       |    |      |
 | vcl_backend_response | backend     |       |    x    |    x    |   x   |    |      |
 | vcl_backend_error    | backend     |       |    x    |         |   x   |    |      |
@@ -31,7 +31,7 @@
 
 
 | subroutine           | req. | bereq. | beresp. | obj. | resp. |
-|----------------------|------|--------|---------|------|-------|
+|----------------------|:----:|:------:|:-------:|:----:|:-----:|
 | vcl_backend_fetch    |      |   R/W  |         |      |       |
 | vcl_backend_response |      |   R/W  |   R/W   |      |       |
 | vcl_backend_error    |      |   R/W  |   R/W   |      |       |
